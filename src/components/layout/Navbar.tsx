@@ -25,7 +25,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link to="/" className="text-xl font-display font-bold text-primary">
+            <Link 
+              to="/" 
+              className="text-2xl md:text-3xl font-display font-bold 
+                bg-gradient-to-r from-primary via-accent to-primary 
+                bg-clip-text text-transparent 
+                hover:from-accent hover:via-primary hover:to-accent 
+                transition-colors duration-300"
+            >
               Lesley Ledwaba
             </Link>
           </div>
