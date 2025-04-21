@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -27,11 +26,12 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             <Link 
               to="/" 
-              className="text-2xl md:text-3xl font-display font-bold 
+              className="text-3xl md:text-4xl lg:text-5xl font-display font-bold 
                 bg-gradient-to-r from-primary via-accent to-primary 
                 bg-clip-text text-transparent 
                 hover:from-accent hover:via-primary hover:to-accent 
-                transition-colors duration-300"
+                hover:text-opacity-80
+                transition-all duration-300 ease-in-out"
             >
               Lesley Ledwaba
             </Link>

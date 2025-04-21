@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden">
+    <section className="pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
