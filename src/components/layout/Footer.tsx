@@ -1,8 +1,31 @@
-
 import { Link } from "react-router-dom";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/lesleyledwaba",
+      icon: <Linkedin className="w-5 h-5" />
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/lesleyledwaba",
+      icon: <Twitter className="w-5 h-5" />
+    },
+    {
+      name: "Facebook",
+      url: "https://facebook.com/lesleyledwaba",
+      icon: <Facebook className="w-5 h-5" />
+    },
+    {
+      name: "Instagram",
+      url: "https://instagram.com/lesleyledwaba",
+      icon: <Instagram className="w-5 h-5" />
+    }
+  ];
   
   return (
     <footer className="bg-secondary/50 py-12">
@@ -49,15 +72,21 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-muted-foreground">
-                <span className="font-medium">Email:</span> contact@lesleyledwaba.com
-              </li>
-              <li className="text-muted-foreground">
-                <span className="font-medium">Location:</span> South Africa
-              </li>
-            </ul>
+            <h3 className="font-semibold text-lg mb-4">Follow Me</h3>
+            <div className="flex gap-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={`Visit ${link.name} profile`}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         
