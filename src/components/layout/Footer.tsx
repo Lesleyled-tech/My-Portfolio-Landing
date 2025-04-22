@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
@@ -6,24 +7,24 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/lesleyledwaba",
-      icon: <Linkedin className="w-5 h-5" />
-    },
-    {
       name: "Twitter",
-      url: "https://twitter.com/lesleyledwaba",
+      url: "https://x.com/Less_Ledwaba?t=VOSMAXe_5Pq10MnDDyrLlw&s=09",
       icon: <Twitter className="w-5 h-5" />
     },
     {
       name: "Facebook",
-      url: "https://facebook.com/lesleyledwaba",
+      url: "https://www.facebook.com/share/1BqDzCPSCP/",
       icon: <Facebook className="w-5 h-5" />
     },
     {
       name: "Instagram",
-      url: "https://instagram.com/lesleyledwaba",
+      url: "https://www.instagram.com/less_ledwaba?igsh=MWp3djYwaXJ4b3Z4cw==",
       icon: <Instagram className="w-5 h-5" />
+    },
+    {
+      name: "WhatsApp",
+      url: "https://whatsapp.com/dl/+27787836188",
+      icon: <Facebook className="w-5 h-5" /> // Using Facebook icon temporarily as WhatsApp isn't in allowed icons
     }
   ];
   
