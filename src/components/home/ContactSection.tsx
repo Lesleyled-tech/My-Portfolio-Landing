@@ -64,7 +64,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">contact@lesleyledwaba.com</p>
+                  <p className="text-muted-foreground">lesley@moov.life</p>
                 </div>
                 <div>
                   <p className="font-medium">Location</p>
@@ -73,11 +73,16 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium">Follow Me</p>
                   <div className="flex gap-4 mt-2">
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      LinkedIn
+                    <a 
+                      href="https://x.com/Less_Ledwaba" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Twitter
                     </a>
                     <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      Twitter
+                      LinkedIn
                     </a>
                     <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                       GitHub
