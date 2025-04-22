@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,11 +19,6 @@ const Footer = () => {
       name: "Instagram",
       url: "https://www.instagram.com/less_ledwaba?igsh=MWp3djYwaXJ4b3Z4cw==",
       icon: <Instagram className="w-5 h-5" />
-    },
-    {
-      name: "WhatsApp",
-      url: "https://whatsapp.com/dl/+27787836188",
-      icon: <Facebook className="w-5 h-5" /> // Using Facebook icon temporarily as WhatsApp isn't in allowed icons
     }
   ];
   
