@@ -53,9 +53,9 @@ const ContactSection = () => {
       icon: <Twitter className="w-5 h-5" />
     },
     {
-      name: "Instagram",
+      name: "TikTok",
       url: "https://www.tiktok.com/@less_ledwaba",
-      icon: <Instagram className="w-5 h-5" /> // Using Instagram icon as a substitute for TikTok
+      icon: null  // We'll update this later
     },
     {
       name: "LinkedIn",
@@ -201,3 +201,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
