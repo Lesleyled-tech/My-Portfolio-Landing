@@ -1,9 +1,10 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Facebook, Instagram, Twitter, TiktokIcon } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -52,9 +53,9 @@ const ContactSection = () => {
       icon: <Twitter className="w-5 h-5" />
     },
     {
-      name: "TikTok",
+      name: "Instagram",
       url: "https://www.tiktok.com/@less_ledwaba",
-      icon: <TiktokIcon className="w-5 h-5" />
+      icon: <Instagram className="w-5 h-5" /> // Using Instagram icon as a substitute for TikTok
     },
     {
       name: "LinkedIn",
