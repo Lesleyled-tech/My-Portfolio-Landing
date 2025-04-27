@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { Facebook, Instagram, Twitter, TiktokIcon } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -45,6 +45,29 @@ const ContactSection = () => {
     }, 1500);
   };
 
+  const socialLinks = [
+    {
+      name: "Twitter",
+      url: "https://x.com/Less_Ledwaba",
+      icon: <Twitter className="w-5 h-5" />
+    },
+    {
+      name: "TikTok",
+      url: "https://www.tiktok.com/@less_ledwaba",
+      icon: <TiktokIcon className="w-5 h-5" />
+    },
+    {
+      name: "LinkedIn",
+      url: "#",
+      icon: null  // We'll update this later
+    },
+    {
+      name: "GitHub",
+      url: "#",
+      icon: null  // We'll update this later
+    }
+  ];
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -73,20 +96,20 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium">Follow Me</p>
                   <div className="flex gap-4 mt-2">
-                    <a 
-                      href="https://x.com/Less_Ledwaba" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      Twitter
-                    </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      LinkedIn
-                    </a>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      GitHub
-                    </a>
+                    {socialLinks.map((link) => (
+                      link.icon && (
+                        <a
+                          key={link.name}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                          aria-label={`Visit ${link.name} profile`}
+                        >
+                          {link.icon}
+                        </a>
+                      )
+                    ))}
                   </div>
                 </div>
               </div>
