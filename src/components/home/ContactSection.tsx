@@ -1,10 +1,11 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Icon } from "lucide-react";
+import { Twitter } from "lucide-react";
+import { tiktok } from "@lucide/lab";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -55,7 +56,7 @@ const ContactSection = () => {
     {
       name: "TikTok",
       url: "https://www.tiktok.com/@less_ledwaba",
-      icon: null  // We'll update this later
+      icon: <Icon iconNode={tiktok} className="w-5 h-5" />
     },
     {
       name: "LinkedIn",
@@ -201,4 +202,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
