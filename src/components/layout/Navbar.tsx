@@ -23,16 +23,16 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-3">
+        <div className="flex h-20 items-center justify-between">
+          <div className="flex items-center gap-4">
             <img 
               src="/lovable-uploads/c767bd1b-a519-4fd7-9b70-a3d19b8c7770.png" 
               alt="Lesley Ledwaba Portrait" 
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border-2 border-primary/20"
+              className="w-14 h-14 md:w-16 md:h-16 lg:w-18 lg:h-18 rounded-full object-cover border-2 border-primary/20"
             />
             <Link 
               to="/" 
-              className="text-2xl md:text-3xl lg:text-4xl font-display font-bold 
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold 
                 bg-gradient-to-r from-primary via-accent to-primary 
                 bg-clip-text text-transparent 
                 hover:from-accent hover:via-primary hover:to-accent 
